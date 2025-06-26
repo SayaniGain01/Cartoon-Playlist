@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="player-box">
+
+        <!-- Cover art -->
+        <div class="art-frame">
+            <img src="images/doraemon.png" alt="cover" class="album-art">
+        </div>
+
+        <!-- Song name display -->
+        <div class="song-title">
+            <div class="scroll-text" id="song-name">Song Title</div>
+        </div>
+
+        <!--  Music progress bar -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 0%;"></div> 
+            </div>
+            <div class="time-stamps">
+                <span class="start-time">0:00</span>
+                <span class="end-time">0:00</span>
+            </div>
+        </div>
+
+        <!-- Play/pause btns -->
+        <div class="controls">
+            <img src="images/prev.png" class="control-btn" alt="prev">
+            <img src="images/play.png" class="control-btn play" alt="play">
+            <!-- <img src="images/pause.png" class="control-btn pause" alt="pause"> -->
+            <img src="images/next.png" class="control-btn" alt="next">
+        </div>
+
+        <!-- Actual audio element -->
+        <audio id="audio-player"></audio>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
